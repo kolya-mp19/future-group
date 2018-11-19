@@ -1,0 +1,72 @@
+.header img {
+    position: absolute;
+}
+
+.girl {
+    padding-top: 58px;
+}
+
+/* .girlBg {
+    width: 100%;
+} */
+
+.imgHeaderBg {
+    padding: 0;
+}
+
+.navBar{
+    padding-top: 80px;
+}
+
+
+.buttonHeader button{
+    border-radius: 40px;
+    box-shadow: 0 0 20px 0 #bde3ef;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.btnHeaderSearch {
+    padding-left: 73px;
+}
+
+.btnHeaderSearchIcon {
+    padding-left: 31px;
+}
+
+.textHeader {
+    font-family: "Roboto";
+    font-weight: bold;
+    padding-left: 55.25%;
+    margin-top: 199px;
+    font-size: 115px;
+    line-height: 120px;
+}
+
+.textHeaderSale {
+    padding-left: 55.25%;
+    margin-top: 50px;
+    font-size: 50px;
+    line-height: 120pt;
+}
+
+.btnDetalis {
+    padding-left: 55%;
+    margin-top: 98px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.bags, .about, .watches {
+    padding: 0 110px 0px 110px;
+}
+
+.bags div {
+        background-color:white;
+}
+
+.main {
+        position: absolute;
+}
