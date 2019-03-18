@@ -1,0 +1,19 @@
+{
+  "name": "future-group",
+  "version": "1.0.0",
+  "description": "project new sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolya-mp19/future-group.git"
+  },
+  "author": "GNP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kolya-mp19/future-group/issues"
+  },
+  "homepage": "https://github.com/kolya-mp19/future-group#readme"
+}
