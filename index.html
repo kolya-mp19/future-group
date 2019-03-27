@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="grad"></div>
-        <img src="img/points.png" alt="">
+    <header class="header">
+        <div class="wrapper">
+            <img class="bgPoints" src="img/points.png" alt="points top">
+            <svg width="400px" height="200px">
+                <clipPath id="clip-text">
+                    <text x="0" y="50%" fill="#f27678" font-size="120px"
+                        font-family=" 'Signika', sans-serif">Apples</text>
+                </clipPath>
+                <rect x="0" y="0" width="200" height="200" fill="#ed6e46" clip-path="url(#clip-text)" />
+                <circle cx="310" cy="100" r="135" fill="#bbc42a" clip-path="url(#clip-text)" />
+            </svg>
+        </div>
+
+
     </header>
-    
+
 </body>
+
 </html>

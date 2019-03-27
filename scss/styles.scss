@@ -3,29 +3,36 @@ body {
     padding: 0;
 }
 
-header {
+@import "extend"; 
+
+.header {
+    @extend %equal-heights;
     height: 100vh;
     width: 100vw;
-    background-image: url("../img/gerl.png"), linear-gradient(-45deg,#d4aaf9,#a18dfd);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left 60px, right bottom;
-    background-size: contain;
-    overflow: hidden;
-    background-blend-mode: darken;
+    background-image: url("../img/gerl.png");
+    background-position: left 60px;
     
-
-    // .grad {
-    //     width: 100%;
-    //     height: 100%;
-    //     background-image: linear-gradient(#d4aaf9,#a18dfd);
-    //     opacity: 1;
-    //     background-blend-mode: oft-light;
-    // }
-}
-
-
-@media (max-width : 1200px) {
-    header {
-        background-position: left bottom;
+    &:after {
+        @extend %equal-heights;
+        content: '';
+        display: block; 
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#d4aaf9,#a18dfd), url("../img/gerl.png");
+        background-position: left top, left 60px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
+        background-blend-mode: darken;
     }
+    z-index: -1;
 }
+
+.wrapper {
+    position: absolute;
+    z-index: 1;
+}
+
+.bgPoints {
+    top: 0px;
+}
+
+@import "media"; 
