@@ -11,7 +11,8 @@ const scssFiles = [
 
 function style() {
     return gulp.src(scssFiles)
-    .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
+    // .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
+    .pipe(sass()).on('error', sass.logError)
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false
@@ -31,7 +32,7 @@ function watch() {
 
     gulp.watch("./scss/**/*.scss", style);
     gulp.watch("./*.html").on("change", browserSync.reload);
-    gulp.watch("./js/**/*.html").on("change", browserSync.reload);
+    gulp.watch("./js/**/*.js").on("change", browserSync.reload);
 }
 
 function compresImg() {

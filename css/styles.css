@@ -2,21 +2,39 @@ body {
   margin: 0;
   padding: 0; }
 
-header {
+.header, .header:after {
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.header {
   height: 100vh;
   width: 100vw;
   background-image: url("../img/gerl.png");
-  background-repeat: no-repeat;
   background-position: left 60px;
-  background-size: contain;
-  overflow: hidden; }
-  header .grad {
+  z-index: -1; }
+  .header:after {
+    content: '';
+    display: block;
     width: 100%;
     height: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#d4aaf9), to(#a18dfd));
-    background-image: linear-gradient(#d4aaf9, #a18dfd);
-    opacity: 0.7; }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d4aaf9), to(#a18dfd)), url("../img/gerl.png");
+    background-image: linear-gradient(#d4aaf9, #a18dfd), url("../img/gerl.png");
+    background-position: left top, left 60px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
+    background-blend-mode: darken; }
+  .header .wrapper {
+    position: absolute;
+    z-index: 2; }
+    .header .wrapper .bgPoints {
+      position: absolute; }
+    .header .wrapper .logo {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin: 5em 0 0 15em; }
 
-@media (max-width: 1200px) {
-  header {
-    background-position: left bottom; } }
+@media (max-width: 1100px) {
+  .header {
+    background-position: left bottom; }
+    .header:after {
+      background-position: left bottom; } }
