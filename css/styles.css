@@ -23,15 +23,17 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
     background-blend-mode: darken; }
+  .header .wrapper {
+    position: absolute;
+    z-index: 2; }
+    .header .wrapper .bgPoints {
+      position: absolute; }
+    .header .wrapper .logo {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin: 5em 0 0 15em; }
 
-.wrapper {
-  position: absolute;
-  z-index: 1; }
-
-.bgPoints {
-  top: 0px; }
-
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .header {
     background-position: left bottom; }
     .header:after {

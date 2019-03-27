@@ -11,7 +11,8 @@ const scssFiles = [
 
 function style() {
     return gulp.src(scssFiles)
-    .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
+    // .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
+    .pipe(sass()).on('error', sass.logError)
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false

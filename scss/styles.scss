@@ -24,15 +24,23 @@ body {
         background-blend-mode: darken;
     }
     z-index: -1;
+
+    .wrapper {
+        position: absolute;
+        z-index: 2;
+
+        .bgPoints {
+            position: absolute;
+        }
+
+        .logo {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 5em 0 0 15em;
+        }
+    }
 }
 
-.wrapper {
-    position: absolute;
-    z-index: 1;
-}
 
-.bgPoints {
-    top: 0px;
-}
 
 @import "media"; 
