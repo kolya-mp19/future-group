@@ -51,8 +51,7 @@ body {
         background-color: white;
         border: none;
         font-size: 1.125em;
-        height: 3.25em;
-        padding-left: 2em; }
+        height: 3.25em; }
         .header .wrapperHeader .logo button:first-child {
           display: -webkit-box;
           display: -ms-flexbox;
